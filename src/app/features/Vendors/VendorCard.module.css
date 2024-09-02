@@ -1,0 +1,74 @@
+.card {
+    border: 1px solid rgb(var(--foreground-rgb));
+    margin: 12px;
+    padding: 12px;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+}
+.name {
+    font-style: oblique;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: center;
+}
+.businessName {
+    font-style: oblique;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+.extendedAddress{
+    padding-left: 12px;
+}
+.facilityType {
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    padding-right: 12px;
+    align-self: center;
+    align-items: center;
+}
+.menu {
+    margin-top: 12px;
+    display: block;
+    list-style-position: inside;
+    padding-left: 12px;
+    max-width: 50vw;
+}
+.menu::before {
+    content: 'Menu: ';
+    font-weight: 800;
+    font-style: oblique;
+}
+.blockLot, .location {
+    display: flex;
+    border-radius: 12px;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: center;
+    padding: 8px;
+    margin: 8px;
+}
+.statusLine {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: center;
+    margin: 8px;
+}
+.statusOK {
+    color: green
+}
+.statusBummer {
+    color: red
+}
+.statusWarn {
+    color: orange;
+}

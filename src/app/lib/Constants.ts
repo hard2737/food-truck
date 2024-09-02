@@ -1,0 +1,1 @@
+export const SF_FOOD_TRUCK_DATA_SOURCE_URL = 'https://data.sfgov.org/api/views/rqzj-sfat/rows.csv';

@@ -1,0 +1,13 @@
+
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-content: center;
+}
+.loadingContent {
+   display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: center;
+}
