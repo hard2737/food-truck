@@ -90,9 +90,6 @@ importers:
       eslint-config-next:
         specifier: 14.2.7
         version: 14.2.7(eslint@9.9.1)(typescript@5.5.4)
-      extend-expec:
-        specifier: link:@testing-library/jest-dom/extend-expec
-        version: link:@testing-library/jest-dom/extend-expec
       extend-expect:
         specifier: link:@testing-library/jest-dom/extend-expect
         version: link:@testing-library/jest-dom/extend-expect
