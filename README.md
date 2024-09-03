@@ -26,9 +26,38 @@ Top of mind I'll do this in NextJS so that I can deploy the results in a publicl
         - I created search functionality
         - In the amount of time that I had to dedicated to this it's hardly a scalable solution, but it works pretty well
         - I struggled late to get unit testing up and running in jest. It is my biggest regret in terms of tradeoffs.
+		- Update, OK I wrote one test after fixing up my configuration
 - Running notes
     - You should be able to run `nvm use && pnpm install && pnpm dev` to run this project
 
+# Testing notes
+- pnpm outdated
+    - `Check for outdated packages. The check can be limited to a subset of the installed packages by providing arguments (patterns are supported).` from `pnpm help outdated`
+- adding a bunch of packages
+```
+pnpm add --save-dev jest
+pnpm add --save-dev @testing-library/jest-dom
+pnpm add --save-dev ts-jest
+pnpm add --save-dev ts-node
+pnpm add --save-dev @jest/globals
+pnpm add --save-dev @jest/types
+pnpm add --save-dev @types/node
+pnpm add --save-dev @types/react
+```
+- Nice ways of checking output from a render
+```
+        import { render, screen, prettyDOM } from '@testing-library/react';
+
+        ...
+
+        const { container, getByText, getByLabelText, debug } = render(<VendorCard vendor={vendor} />);
+
+        console.log(container.innerHTML);
+        debug();
+        console.log(prettyDOM());
+
+        console.log(prettyDOM(getByText('Food Truck')));
+```
 
 ### My initial setup
 - `npm i -g pnpm`
