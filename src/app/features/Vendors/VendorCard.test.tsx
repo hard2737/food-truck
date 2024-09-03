@@ -32,6 +32,8 @@ describe('VendorCard', () => {
     it('renders the vendor card for a truck correctly', () => {
         const { container, getByText, debug, getByTestId, getAllByTestId } = render(<VendorCard vendor={vendor} />);
 
+        // https://nodejs.org/api/debugger.html
+        // https://jestjs.io/docs/troubleshooting
         // DEBUGGING tools
         // 
         // console.log(container.innerHTML);
